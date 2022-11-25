@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 11</title>
+    <script src="script.js"></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="modal-overlay hidden">
+      <div class="modal">
+        <div>
+          <label for="input-name">Name:</label>
+          <input id="input-name" type="text" />
+        </div>
+        <div>
+          <label for="input-episode">Episode:</label>
+          <input id="input-episode" type="text" />
+        </div>
+        <div>
+          <label for="input-airdate">Air date:</label>
+          <input id="input-airdate" type="text" />
+        </div>
+        <div class="action-buttons">
+          <button id="modal-update">Update</button>
+          <button id="modal-cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <ul id="episode-list"></ul>
+    <div id="delete-confirmation-modal">
+      <p>Do you want to delete the selected episode?</p>
+      <div class="delete-action-buttons">
+        <button class="yes-button" id="confirmation-button">Yes</button>
+        <button class="no-button" id="delete-modal-cancel-button">No</button>
+      </div>
+    </div>
+  </body>
+</html>
