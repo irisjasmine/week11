@@ -16,20 +16,21 @@ ul#episode-list > li {
 }
 
 .modal-overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(211, 211, 211, 0.562);
   width: 100%;
   height: 100%;
   opacity: 1;
+  z-index: 999;
 }
 
 .modal {
   width: 300px;
   border: 1px solid black;
   padding: 10px;
-  position: fixed;
+  position: absolute;
   background-color: rgb(255, 255, 255);
   top: 50%;
   left: 50%;
@@ -87,3 +88,4 @@ ul#episode-list > li {
   height: 20px;
   background-color: rgb(135, 135, 135);
 }
+
